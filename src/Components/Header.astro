@@ -1,0 +1,42 @@
+---
+import Card from '@/Components/Card.astro'
+import Time from '@/Components/Time.astro'
+import MainCard from './MainCard.astro'
+import DateCard from '@/Components/DateCard.astro'
+import TechnologyCard from '@/Components/TechnologyCard.astro'
+---
+
+<section class='grid gap-10 grid-cols-5 grid-rows-6 h-[600px]'>
+  <Card className='p-5 row-span-2 flex justify-center items-center'>
+    <Time />
+  </Card>
+  <Card className='p-5 col-span-3 row-span-4'>
+    <MainCard />
+  </Card>
+  <Card className='p-5 row-span-2'>
+    <DateCard />
+  </Card>
+  <Card className='p-5 row-span-2 flex justify-center items-center'>
+    <p
+      class='bg-gradient-to-r from-gradient-pink to-gradient-purple gradient text-6xl font-bold text-center'>
+      MX
+    </p>
+  </Card>
+  <Card className='p-5 row-span-2 flex justify-center items-center'>
+    <p
+      class='bg-gradient-to-r from-gradient-pink to-gradient-purple gradient text-3xl font-bold text-center'>
+      FullStack Developer
+    </p>
+  </Card>
+  <Card className='p-5 col-span-3 row-span-4 justify-center items-center'>
+    <TechnologyCard />
+  </Card>
+  <Card className='col-span-2 row-span-4 w-auto h-auto'>
+    <img
+      src='src/assets/img/headerimg.jpeg'
+      alt='Header Image'
+      title='Header Image'
+      class='w-full h-full object-cover'
+    />
+  </Card>
+</section>

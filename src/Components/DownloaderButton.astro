@@ -1,0 +1,15 @@
+---
+const { variant } = Astro.props
+
+const variants: { [key: string]: string } = {
+  primary: 'bg-btn-btnPrimary',
+  secondary: 'bg-btn-btnSecondary',
+}
+---
+
+<a
+  class={`px-5 py-2 rounded-xl text-textColor-primary text-lg ${variants[variant]} hover:opacity-80 cursor-pointer flex gap-4 justify-center items-center`}
+  download
+  href='src/assets/docs/BogarAlejandroCV.pdf'>
+  <slot />
+</a>

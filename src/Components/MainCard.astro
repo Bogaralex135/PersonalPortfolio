@@ -1,0 +1,30 @@
+---
+import DownloaderButton from './DownloaderButton.astro'
+import Linkedin from '@/assets/Icons/Linkedin.astro'
+import Github from '@/assets/Icons/Github.astro'
+import LinkButton from './LinkButton.astro'
+import Doc from '@/assets/Icons/Doc.astro'
+---
+
+<div class='flex justify-between items-center flex-col px-3 py-5 w-full h-full'>
+  <div class='flex justify-center items-center flex-col gap-4'>
+    <h1 class='text-textColor-primary text-5xl font-bold'>Alejandro VM</h1>
+    <h2 class='text-textColor-secondary text-xl font-bold'>
+      Seeking opportunities to improve and grow professionally. I'm always ready
+      to face new challenges.
+    </h2>
+  </div>
+  <div class='flex justify-between items-center w-full'>
+    <DownloaderButton variant='primary'><Doc /> Resume</DownloaderButton>
+    <div class='flex justify-center items-center'>
+      <LinkButton
+        href='https://www.linkedin.com/in/bogar-alejandro-vázquez-mata-479846256/'
+        target='_blank'>
+        <Linkedin />
+      </LinkButton>
+      <LinkButton href='https://github.com/Bogaralex135' target='_blank'>
+        <Github />
+      </LinkButton>
+    </div>
+  </div>
+</div>
