@@ -1,0 +1,46 @@
+---
+import ProjectCard from './ProjectCard.astro'
+import Card from './Card.astro'
+
+const projects = [
+  {
+    name: 'EcoVidaStore',
+    image: '/ecovida.png',
+    technologies: 'React, Redux, NodeJS, Express, MongoDB',
+    description:
+      'E-commerce of sustainable food for environmentally conscious consumers concerned about their diet.',
+    github: 'https://github.com/No-Country/c15-06-m-node-react-',
+    live: 'https://main--ecovidastore1.netlify.app',
+  },
+  {
+    name: 'Sethor',
+    image: '/sethor.png',
+    technologies: 'React Native, Redux.',
+    description:
+      'Hybrid application that combines a digital wallet with the versatility of e-commerce.',
+  },
+  {
+    name: 'petsRegister',
+    image: '/petsregister.png',
+    technologies: 'React, tailwind',
+    description: 'Pet registration application at a veterinary clinic.',
+    github: 'https://github.com/Bogaralex135/Citas-React',
+    live: 'https://petsregister.netlify.app',
+  },
+  {
+    name: 'Buscador de bebidas',
+    image: '/buscadorBebidas.png',
+    technologies: 'React, Bootstrap',
+    description: 'Drink finder application.',
+    github: 'https://github.com/Bogaralex135/BuscarBebidas',
+    live: 'https://bebidasbuscadorreact.netlify.app',
+  },
+]
+---
+
+<Card className='px-20 py-10 '>
+  <h2 class='text-3xl font-bold mb-6 text-textColor-primary'>Projects</h2>
+  <div class='flex flex-col gap-8'>
+    {projects.map(project => <ProjectCard project={project} />)}
+  </div>
+</Card>

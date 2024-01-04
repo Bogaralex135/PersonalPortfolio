@@ -1,0 +1,38 @@
+---
+import Card from './Card.astro'
+import ExperienceItem from './ExperienceItem.astro'
+
+const experiences = [
+  {
+    title: 'React Developer',
+    date: 'November 2023 - Present',
+    description: 'EcoVidaStore | NoCountry',
+    points: [
+      'Enhanced user experience by implementing responsive web designs and optimizing application performance.',
+      'Reduced application load times by optimizing React components and utilizing code-splitting techniques.',
+      'Collaborated with cross-functional teams to develop seamless integration of APIs, improving data flow within applications.',
+      'Boosted application efficiency by incorporating Redux for state management and streamlining component rerendering.',
+      'Mentored junior developers, providing guidance on React concepts and best practices for efficient project completion.',
+    ],
+  },
+  {
+    title: 'React Native Developer',
+    date: 'October 2023 - december 2023',
+    description: 'Sethor',
+    points: [
+      'Enhanced app performance by optimizing React Native components and implementing best practices.',
+      'Developed reusable components for faster development and improved code maintainability.',
+      'Collaborated with cross-functional teams to deliver high-quality mobile applications on time and within budget.',
+      'Utilized Agile methodologies for efficient project management and timely delivery of features.',
+    ],
+  },
+]
+---
+
+<Card className='px-20 py-10 my-10'>
+  <h2 class='text-3xl font-bold mb-6 text-textColor-primary'>Experience</h2>
+
+  <ol class='relative border-s border-gray-200 dark:border-gray-700'>
+    {experiences.map(experience => <ExperienceItem experience={experience} />)}
+  </ol>
+</Card>

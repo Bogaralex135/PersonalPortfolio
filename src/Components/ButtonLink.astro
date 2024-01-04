@@ -1,0 +1,16 @@
+---
+const { href, variant } = Astro.props
+
+const variants: { [key: string]: string } = {
+  primary: 'bg-btn-btnPrimary',
+  secondary: 'bg-btn-btnSecondary',
+}
+---
+
+<a
+  class={`px-5 py-2 rounded-xl text-textColor-primary text-lg ${variants[variant]} hover:opacity-80 cursor-pointer`}
+  href={href}
+  target='_blank'
+  rel='noopener noreferrer'>
+  <slot />
+</a>

@@ -4,9 +4,10 @@ import Time from '@/Components/Time.astro'
 import MainCard from './MainCard.astro'
 import DateCard from '@/Components/DateCard.astro'
 import TechnologyCard from '@/Components/TechnologyCard.astro'
+import SectionLayout from './SectionLayout.astro'
 ---
 
-<section class='grid gap-10 grid-cols-5 grid-rows-6 h-[600px]'>
+<SectionLayout>
   <Card className='p-5 row-span-2 flex justify-center items-center'>
     <Time />
   </Card>
@@ -39,4 +40,4 @@ import TechnologyCard from '@/Components/TechnologyCard.astro'
       class='w-full h-full object-cover'
     />
   </Card>
-</section>
+</SectionLayout>

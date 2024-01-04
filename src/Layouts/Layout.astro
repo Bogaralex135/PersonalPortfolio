@@ -11,9 +11,11 @@ import '../assets/styles/animations.css'
     <meta name='generator' content={Astro.generator} />
     <title>Bogar Alejandro - Portfolio</title>
   </head>
-  <body class='bg-baseColor-background font-plus bg'>
-    <main class='max-w-6xl mx-auto w-full'>
-      <slot />
-    </main>
+  <body class='font-plus bgColor'>
+    <div class='bgAnimation'>
+      <main class='max-w-6xl mx-auto w-full'>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
